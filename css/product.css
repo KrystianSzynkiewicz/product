@@ -1,0 +1,64 @@
+:root {
+  --main-bg-color: #f6f2f1;
+  --main-font-color: #333333;
+  --footer-bg-color: rgba(51, 51, 51, 255);
+  --footer-font-color: #ffffff;
+
+  --topbar-bg-color: rgba(248, 248, 255, 255);
+  --topbar-text-color: #373737;
+  --topbar-icon-color: #868686;
+
+  --second-element-color: #303494;
+  --second-element-first-menu-color: #42459d;
+  --pink-font-color: #ec008a;
+
+  --article-bg-color: #f8f8ff;
+
+  --search-bg-color: #f8f8f8;
+
+  --max-width-px: 1600px;
+}
+#delete-border {
+  border-color: var(--search-bg-color) !important;
+}
+.woocommerce-product-gallery__trigger {
+  display: none;
+}
+
+.input-stepper {
+  max-width: 200px;
+}
+/* UNDER ADD TO CART */
+.delivery-icons {
+  display: flex;
+  justify-content: space-around;
+}
+.free-shipping-delivery {
+  display: flex;
+  justify-content: space-around;
+}
+.free-shipping-delivery img {
+  max-width: 100px;
+}
+.red {
+  background: rgb(255, 211, 211);
+}
+
+.row-descript {
+  display: flex;
+  justify-content: space-between;
+}
+.links-bread {
+  display: flex;
+  flex-wrap: wrap;
+}
+.link-under-description {
+  border: 2px solid red;
+}
+.product-wrapper .button-in.wishlist i,
+.yith-wcwl-add-to-wishlist i::after {
+  display: block !important;
+}
+.price {
+  color: black !important;
+}

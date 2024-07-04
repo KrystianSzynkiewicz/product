@@ -1,4 +1,9 @@
 <!DOCTYPE html><html lang="en-US" class=" yes-js js_active js"><head>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 	<meta charset="UTF-8">
 
@@ -310,13 +315,47 @@ var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/ecomall\/?wc-ajax=%%endp
 												<path d="M74.1953 92.2265C75.8158 92.2265 77.1296 90.9128 77.1296 89.2922C77.1296 87.6716 75.8158 86.3579 74.1953 86.3579C72.5747 86.3579 71.261 87.6716 71.261 89.2922C71.261 90.9128 72.5747 92.2265 74.1953 92.2265Z" fill="#808080"></path>
 												<path d="M103.538 92.226C105.159 92.226 106.472 90.9123 106.472 89.2917C106.472 87.6711 105.159 86.3574 103.538 86.3574C101.917 86.3574 100.604 87.6711 100.604 89.2917C100.604 90.9123 101.917 92.226 103.538 92.226Z" fill="#808080"></path>
 												</svg>
-												<span>Your cart is currently empty</span>
+												<span>Twój koszyk jest pusty</span>
 											</label>
 										</div>
 									</div>
 								</div>
 							</div>
 			
+							<div class="header-center menu-wrapper hidden-phone" id="email-input">
+								<div class="ts-search-by-category ">
+									<form id="delete-border" class="form-width" action="https://demo.theme-sky.com/ecomall/" method="get">					
+										<div class="search-table">
+											<div class="search-field search-content">
+												<input type="text" value="" name="s" placeholder="Email/login" autocomplete="off">
+												<input type="hidden" name="post_type" value="product">
+												<div class="search-button">
+													<!-- <input type="submit" title="Search" value="Search"> -->
+												</div>
+												<input type="hidden" name="taxonomy" value="product_cat">
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="header-center menu-wrapper hidden-phone" id="password-input">
+								<div class="ts-search-by-category ">
+									<form id="delete-border" class="form-width" action="https://demo.theme-sky.com/ecomall/" method="get">					
+										<div class="search-table">
+											<div class="search-field search-content">
+												<input type="text" value="" name="s" placeholder="Hasło" autocomplete="off">
+												<input type="hidden" name="post_type" value="product">
+												<div class="search-button">
+													<!-- <input type="submit" title="Search" value="Search"> -->
+												</div>
+												<input type="hidden" name="taxonomy" value="product_cat">
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+
 							<div class="my-account-wrapper">							
 								<div class="ts-tiny-account-wrapper">
 									<div class="account-control login-button">
@@ -351,38 +390,6 @@ var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/ecomall\/?wc-ajax=%%endp
 								</div>		
 							</div>
 							
-							<div class="my-account-wrapper">							
-								<div class="ts-tiny-account-wrapper">	
-									<div class="account-control login-button">
-										<a class="login sign-button" href="https://demo.theme-sky.com/ecomall/my-account/">
-											<!-- <i class='far fa-user' style='font-size:24px'></i> -->
-											Zarejestruj się
-										</a>						
-										<div class="account-dropdown-form dropdown-container">
-											<div class="form-content">				
-												<form name="ts-login-form" id="ts-login-form" action="https://demo.theme-sky.com/ecomall/wp-login.php" method="post">
-													<p class="login-username">
-														<label for="user_login">Username or email address *</label>
-														<input type="text" name="log" id="user_login" autocomplete="username" class="input" value="" size="20">
-													</p>
-													<p class="login-password">
-														<label for="user_pass">Password *</label>
-														<input type="password" name="pwd" id="user_pass" autocomplete="current-password" spellcheck="false" class="input" value="" size="20">
-													</p>
-													<p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember Me</label></p><p class="login-submit">
-														<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary" value="Sign in">
-														<input type="hidden" name="redirect_to" value="https://demo.theme-sky.com/ecomall/home-4/?hover_style=v1">
-													</p>
-												</form>							
-												<div class="create-account-wrapper">
-													<span>I'm new client.</span>
-													<a class="create-account button-text" href="https://demo.theme-sky.com/ecomall/my-account/">Create an account</a>
-												</div>											
-											</div>
-										</div>						
-									</div>
-								</div>		
-							</div>
 			
 							<div class="ts-mobile-icon-toggle visible-phone">
 								<span class="icon"></span>
@@ -621,33 +628,44 @@ var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/ecomall\/?wc-ajax=%%endp
 		
 <!-- END-OF-HEADER -->
 
-	<div id="main" class="wrapper"><div class="breadcrumb-title-wrapper breadcrumb-v1 no-title"><div class="breadcrumb-content"><div class="breadcrumb-title"><div class="breadcrumbs"><div class="breadcrumbs-container"><a href="https://demo.theme-sky.com/ecomall">Urządzenia biurowe</a>
-		<span>>
-			<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="32"
-			height="32"
-			viewBox="0 0 24 24"
-			class="filter-blue"
-		  >
-			<path fill="none" d="M0 0h24v24H0V0z" />
-			<path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
-		  </svg>
-		</span><a href="https://demo.theme-sky.com/ecomall/shop/">Niszczarki domumentów</a>
-		<span>
-			<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="32"
-			height="32"
-			viewBox="0 0 24 24"
-			class="filter-blue"
-		  >
-			<path fill="none" d="M0 0h24v24H0V0z" />
-			<path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
-		  </svg>
-		</span>
-		Niszczarka HP OneShred 12CC</div></div></div></div></div><div class="page-container show_breadcrumb_v1 no-sidebar">
-	
+	<div id="main" class="wrapper">
+
+		<div class="page-container show_breadcrumb_v1 no-sidebar">
+			<div class="breadcrumb-content">
+				<div class="breadcrumb-title">
+					<div class="breadcrumbs">
+						<div class="breadcrumbs-container">
+							<a href="https://demo.theme-sky.com/ecomall">Urządzenia biurowe</a>
+								<span>
+									<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="32"
+									height="32"
+									viewBox="0 0 24 24"
+									class="color-grey"
+									>
+									<path fill="none" d="M0 0h24v24H0V0z" />
+									<path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+									</svg>
+								</span>
+								<a href="https://demo.theme-sky.com/ecomall/shop/">Niszczarki domumentów</a>
+								<span>
+									<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="32"
+									height="32"
+									viewBox="0 0 24 24"
+									class="color-grey"
+									>
+									<path fill="none" d="M0 0h24v24H0V0z" />
+									<path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+									</svg>
+								</span>
+								<span class="last-breadcrumbs">Niszczarka HP OneShred 12CC</span>
+						</div>
+					</div>
+				</div>
+			</div>
 	<!-- Left Sidebar -->
 		
 <div id="main-content">	
@@ -704,7 +722,7 @@ var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/ecomall\/?wc-ajax=%%endp
 			<div class="chose-model">
 				<label for="">Wybierz dostęny typ/model:</label>
 
-				<select name="" id="">
+				<select name="" id="model-select">
 				<option value="">10K602C</option>
 				<option value="">1option</option>
 				<option value="">1option</option>
@@ -713,10 +731,10 @@ var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/ecomall\/?wc-ajax=%%endp
 				<option value="">1option</option>
 				</select>
 			</div>
-
+			<p>Cena brutto:</p>
 			<p class="price">
 				<del aria-hidden="true">
-					<span class="woocommerce-Price-amount amount">
+					<span class="woocommerce-Price-amount amount" id="old-price">
 					<bdi>
 					736,01 <span>zł</span>
 					</bdi>
@@ -731,22 +749,25 @@ var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/ecomall\/?wc-ajax=%%endp
 
 		
 		<form class="cart" action="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-256gb-black-unlocked/" method="post" enctype="multipart/form-data">
-			<div class="input-stepper" id="x">
-				<button data-input-stepper-decrease>➖</button>
+			<div class="input-stepper">
+				<button data-input-stepper-decrease class="minus">−</button>
 				<input type="text">
-				<button data-input-stepper-increase>➕</button>
+				<button data-input-stepper-increase class="plus">+</button>
 			</div>
-			<div class="quantity">
+			<!-- <div class="quantity">
 				<div class="number-button">
 					<input type="button" value="-" class="minus">
 					<label class="screen-reader-text" for="quantity_667bac59296e1">Apple iPhone 11 Pro Max, 256GB, Black - Unlocked quantity</label>
 					<input type="number" id="quantity_667bac59296e1" class="input-text qty text" name="quantity" value="1" aria-label="Product quantity" size="4" min="1" max="252" step="1" placeholder="" inputmode="numeric" autocomplete="off">
 					<input type="button" value="+" class="plus">
 				</div>
-			</div>
+			</div> -->
 
-			<button type="submit" name="add-to-cart" value="6972" class="single_add_to_cart_button button alt">Dodaj do koszyka</button>
-
+			<!-- <button type="submit" name="add-to-cart" value="6972" class="single_add_to_cart_button button alt">Dodaj do koszyka</button> -->
+			<button class="add-to-cart">
+				<i class="fa fa-shopping-cart" style="font-size:24px"></i>
+				Dodaj do koszyka
+			</button>
 			</form>
 
 	
@@ -754,23 +775,23 @@ var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/ecomall\/?wc-ajax=%%endp
 		<div class="free-shipping-delivery">
 			<img src="images/free-shipping.png" alt="">
 			<div class="description-free-shipping">
-				<span>
+				<span class="title">
 					Darmowa wysyłka<br>
 				</span>
-				<span>
+				<div class="description">
 					Przy zamówieniu powyżej 294 zł
-				</span>
+				</div>
 			</div>
 		</div>	
 		<div class="free-shipping-delivery">
 			<img src="images/delivery.png" alt="">
 			<div class="description-free-shipping">
-				<span>
-					Darmowa wysyłka<br>
+				<span class="title">
+					Przesyłka kurierska<br>
 				</span>
-				<span>
-					Przy zamówieniu powyżej 294 zł
-				</span>
+				<div class="description">
+					14,90 zł
+				</div>
 			</div>
 		</div>	
 	</div>
@@ -783,316 +804,243 @@ var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/ecomall\/?wc-ajax=%%endp
 
 	<!-- SECTION2-of-product -->
 
-	<div class="container-fluid red">
-		<div class="row-descript">
-			<div class="descript-of-product">
-				<h2>Opis Produktu</h2>
-				<div class="elementor-element elementor-element-22e306dd e-flex e-con-boxed e-con e-parent" data-id="22e306dd" data-element_type="container" data-core-v316-plus="true">
-					<div class="e-con-inner">
-						<div class="elementor-element elementor-element-7e79853e elementor-widget elementor-widget-text-editor" data-id="7e79853e" data-element_type="widget" data-widget_type="text-editor.default">
-							<div class="elementor-widget-container">
-								<p>	
-									Niszczarka HP OneShred 12CC - funkcjonalne urządzenie, sprawdzające się idealnie w każdym biurze jak i do 
-									użytku osobistego. Niszczy do 12 kartek jednorazowo - papier cięty jest na mikrościnki o wymiarze 
-									4mm x 35mm - bezpieczeństwo jest na wysokim poziomie P-4/T-4. Niszczarka ścina zszywki, spinacze oraz 
-									karty kredytowe.<br><br>
-									Urządzenie wyposażone jest w 23 litrowy pojemnik na ścinki z podnoszoną głowicą oraz okienko, dzięki któremu można kontrolować poziom napełnienia kosza.
-								</p>						
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="links-bread">
-					<div class="link-under-description">
-						Niszczarka do użytku osobistego lub w domowym biurze (do 3 osób)
-					</div>
-					<div class="link-under-description">
-						Niszczy do 8 kartek jednorazowo
-					</div>
-					<div class="link-under-description">
-						Tnie na ścinki 5 x 18 mm
-					</div>
-					<div class="link-under-description">
-						Pojemność kosza 15 l / podnoszona głowica
-					</div>
-					<div class="link-under-description">
-						Niszczy papier, zszywki, spinacze, karty kredytowe
-					</div>
-					<div class="link-under-description">
-						Poziom bezpieczeństwa P-4/T-4
-					</div>
-					<div class="link-under-description">
-						Gwarancja 2 lata
-					</div>
-					<div class="link-under-description">
-						Kolor: jasno szary z ciemniejszymi aplikacjami
-					</div>
-				</div>
+	<div class="container-fluid description-section">
+		<div class="left-infos" >
+			<h2>Opis Produktu</h2>
+			<p>	
+				Niszczarka HP OneShred 12CC - funkcjonalne urządzenie, sprawdzające się idealnie w każdym biurze jak i do 
+				użytku osobistego. Niszczy do 12 kartek jednorazowo - papier cięty jest na mikrościnki o wymiarze 
+				4mm x 35mm - bezpieczeństwo jest na wysokim poziomie P-4/T-4. Niszczarka ścina zszywki, spinacze oraz 
+				karty kredytowe.<br><br>
+				Urządzenie wyposażone jest w 23 litrowy pojemnik na ścinki z podnoszoną głowicą oraz okienko, dzięki któremu można kontrolować poziom napełnienia kosza.
+			</p>
+			
+		<div class="links-bread">
+			<div class="link-under-description">
+				Niszczarka do użytku osobistego lub w domowym biurze (do 3 osób)
 			</div>
-			<div class="prams-of-product">
-				<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab" id="tab-additional_information" role="tabpanel" aria-labelledby="tab-title-additional_information">
-				
-					<h2>Additional information</h2>
-				
-				<div><table class="woocommerce-product-attributes shop_attributes">
-							<tbody><tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_condition">
-							<th class="woocommerce-product-attributes-item__label">Condition</th>
-							<td class="woocommerce-product-attributes-item__value"><p>New</p>
-				</td>
-						</tr>
-							<tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_color">
-							<th class="woocommerce-product-attributes-item__label">Color</th>
-							<td class="woocommerce-product-attributes-item__value"><p>Black</p>
-				</td>
-						</tr>
-							<tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_storage-capacity">
-							<th class="woocommerce-product-attributes-item__label">Storage Capacity</th>
-							<td class="woocommerce-product-attributes-item__value"><p>256GB</p>
-				</td>
-						</tr>
-							<tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_screen-size">
-							<th class="woocommerce-product-attributes-item__label">Screen Size</th>
-							<td class="woocommerce-product-attributes-item__value"><p>0 – 6"</p>
-				</td>
-						</tr>
-							<tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_operating-system">
-							<th class="woocommerce-product-attributes-item__label">Operating System</th>
-							<td class="woocommerce-product-attributes-item__value"><p>iOS</p>
-				</td>
-						</tr>
-					</tbody></table>
-				</div>			</div>
+			<div class="link-under-description">
+				Niszczy do 8 kartek jednorazowo
+			</div>
+			<div class="link-under-description">
+				Tnie na ścinki 5 x 18 mm
+			</div>
+			<div class="link-under-description">
+				Pojemność kosza 15 l / podnoszona głowica
+			</div>
+			<div class="link-under-description">
+				Niszczy papier, zszywki, spinacze, karty kredytowe
+			</div>
+			<div class="link-under-description">
+				Poziom bezpieczeństwa P-4/T-4
+			</div>
+			<div class="link-under-description">
+				Gwarancja 2 lata
+			</div>
+			<div class="link-under-description">
+				Kolor: jasno szary z ciemniejszymi aplikacjami
 			</div>
 		</div>
+		</div>
+		<div class="right-infos">
+			<h2>Parametry</h2>
+			<table class="description-section-table">
+				<tbody>
+				<tr class="bg-grey padding-row">
+				<td class="first-column">Rodzaj cięcia</td>
+				<td>ścinki</td>
+				</tr>
+				<tr class="padding-row">
+				<td class="first-column">Zastosowanie</td>
+				<td>biuro i dom</td>
+				</tr>
+				<tr class="bg-grey padding-row">
+				<td class="first-column">Poziom bezpieczeństwa DIN</td>
+				<td>T-4</td>
+				</tr>
+				<tr class="padding-row">
+				<td class="first-column">Poziom bezpieczeństwa P</td>
+				<td>P-4</td>
+				</tr>
+				<tr class="bg-grey padding-row">
+				<td class="first-column">Niszczenie zszywek</td>
+				<td>Tak</td>
+				</tr>
+				<tr class="padding-row">
+				<td class="first-column">Niszczenie kart</td>
+				<td>Tak</td>
+				</tr>
+				<tr class="bg-grey padding-row">
+				<td class="first-column">Niszczeie płyt CD</td>
+				<td>Tak</td>
+				</tr>
+				<tr class="padding-row">
+				<td class="first-column">Niszczenie spinaczy</td>
+				<td>Tak</td>
+				</tr>
+				</tbody>
+				</table>
+		</div>
 	</div>
+
+	<br>
 
 	<!-- end-SECTION2-of-product -->
 
 
 
 <section class="related products">
-	<h2>Related products</h2>
-	
-		<div class="products">							
-			<section class="product add-to-wishlist-after_add_to_cart type-product post-6963 status-publish instock product_cat-iphone product_tag-tag-apple-iphone product_tag-tag-cellphone product_tag-tag-electronic product_tag-tag-mobile-tablet has-post-thumbnail shipping-taxable purchasable product-type-variable" data-product_id="6963">
-				<div class="product-wrapper">
-
-					<i class="yith-wcwl-icon fa fa-heart-o"></i>
-
-					<div class="thumbnail-wrapper">
-						<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">
-							<figure class="no-back-image">
-								<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
-							</figure>			
-						</a>
-				<div class="product-group-button">
-
-	</div>		
-</div>
-					<div class="meta-wrapper">
-						<h3 class="heading-title product-name">
-							<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">Niszczarka HP OneShred 12CC</a>
-						</h3>
-
-						<span class="price"><span class="woocommerce-Price-amount amount">
-							<bdi>
-
-							</span>736,01 zł</bdi>
-						</span> 
-						
-			<div class="product-group-button-meta">
-
-				</div>		</div>
-				</div>
-			</section>
-			<section class="product add-to-wishlist-after_add_to_cart type-product post-6963 status-publish instock product_cat-iphone product_tag-tag-apple-iphone product_tag-tag-cellphone product_tag-tag-electronic product_tag-tag-mobile-tablet has-post-thumbnail shipping-taxable purchasable product-type-variable" data-product_id="6963">
-				<div class="product-wrapper">
-
-					<i class="yith-wcwl-icon fa fa-heart-o"></i>
-
-					<div class="thumbnail-wrapper">
-						<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">
-							<figure class="no-back-image">
-								<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
-							</figure>			
-						</a>
-				<div class="product-group-button">
-
-	</div>		
-</div>
-					<div class="meta-wrapper">
-						<h3 class="heading-title product-name">
-							<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">Niszczarka HP OneShred 12CC</a>
-						</h3>
-
-						<span class="price"><span class="woocommerce-Price-amount amount">
-							<bdi>
-
-							</span>736,01 zł</bdi>
-						</span> 
-						
-			<div class="product-group-button-meta">
-
-				</div>		</div>
-				</div>
-			</section>
-			<section class="product add-to-wishlist-after_add_to_cart type-product post-6963 status-publish instock product_cat-iphone product_tag-tag-apple-iphone product_tag-tag-cellphone product_tag-tag-electronic product_tag-tag-mobile-tablet has-post-thumbnail shipping-taxable purchasable product-type-variable" data-product_id="6963">
-				<div class="product-wrapper">
-
-					<i class="yith-wcwl-icon fa fa-heart-o"></i>
-
-					<div class="thumbnail-wrapper">
-						<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">
-							<figure class="no-back-image">
-								<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
-							</figure>			
-						</a>
-				<div class="product-group-button">
-
-	</div>		
-</div>
-					<div class="meta-wrapper">
-						<h3 class="heading-title product-name">
-							<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">Niszczarka HP OneShred 12CC</a>
-						</h3>
-
-						<span class="price"><span class="woocommerce-Price-amount amount">
-							<bdi>
-
-							</span>736,01 zł</bdi>
-						</span> 
-						
-			<div class="product-group-button-meta">
-
-				</div>		</div>
-				</div>
-			</section>
-			<section class="product add-to-wishlist-after_add_to_cart type-product post-6963 status-publish instock product_cat-iphone product_tag-tag-apple-iphone product_tag-tag-cellphone product_tag-tag-electronic product_tag-tag-mobile-tablet has-post-thumbnail shipping-taxable purchasable product-type-variable" data-product_id="6963">
-				<div class="product-wrapper">
-
-					<i class="yith-wcwl-icon fa fa-heart-o"></i>
-
-					<div class="thumbnail-wrapper">
-						<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">
-							<figure class="no-back-image">
-								<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
-							</figure>			
-						</a>
-				<div class="product-group-button">
-
-	</div>		
-</div>
-					<div class="meta-wrapper">
-						<h3 class="heading-title product-name">
-							<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">Niszczarka HP OneShred 12CC</a>
-						</h3>
-
-						<span class="price"><span class="woocommerce-Price-amount amount">
-							<bdi>
-
-							</span>736,01 zł</bdi>
-						</span> 
-						
-			<div class="product-group-button-meta">
-
-				</div>		</div>
-				</div>
-			</section>
-			<section class="product add-to-wishlist-after_add_to_cart type-product post-6963 status-publish instock product_cat-iphone product_tag-tag-apple-iphone product_tag-tag-cellphone product_tag-tag-electronic product_tag-tag-mobile-tablet has-post-thumbnail shipping-taxable purchasable product-type-variable" data-product_id="6963">
-				<div class="product-wrapper">
-
-					<i class="yith-wcwl-icon fa fa-heart-o"></i>
-
-					<div class="thumbnail-wrapper">
-						<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">
-							<figure class="no-back-image">
-								<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
-							</figure>			
-						</a>
-				<div class="product-group-button">
-
-	</div>		
-</div>
-					<div class="meta-wrapper">
-						<h3 class="heading-title product-name">
-							<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">Niszczarka HP OneShred 12CC</a>
-						</h3>
-
-						<span class="price"><span class="woocommerce-Price-amount amount">
-							<bdi>
-
-							</span>736,01 zł</bdi>
-						</span> 
-						
-			<div class="product-group-button-meta">
-
-				</div>		</div>
-				</div>
-			</section>
-			<section class="product add-to-wishlist-after_add_to_cart type-product post-6963 status-publish instock product_cat-iphone product_tag-tag-apple-iphone product_tag-tag-cellphone product_tag-tag-electronic product_tag-tag-mobile-tablet has-post-thumbnail shipping-taxable purchasable product-type-variable" data-product_id="6963">
-				<div class="product-wrapper">
-
-					<i class="yith-wcwl-icon fa fa-heart-o"></i>
-
-					<div class="thumbnail-wrapper">
-						<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">
-							<figure class="no-back-image">
-								<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
-							</figure>			
-						</a>
-				<div class="product-group-button">
-
-	</div>		
-</div>
-					<div class="meta-wrapper">
-						<h3 class="heading-title product-name">
-							<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">Niszczarka HP OneShred 12CC</a>
-						</h3>
-
-						<span class="price"><span class="woocommerce-Price-amount amount">
-							<bdi>
-
-							</span>736,01 zł</bdi>
-						</span> 
-						
-			<div class="product-group-button-meta">
-
-				</div>		</div>
-				</div>
-			</section>
-			<section class="product add-to-wishlist-after_add_to_cart type-product post-6963 status-publish instock product_cat-iphone product_tag-tag-apple-iphone product_tag-tag-cellphone product_tag-tag-electronic product_tag-tag-mobile-tablet has-post-thumbnail shipping-taxable purchasable product-type-variable" data-product_id="6963">
-				<div class="product-wrapper">
-
-					<i class="yith-wcwl-icon fa fa-heart-o"></i>
-
-					<div class="thumbnail-wrapper">
-						<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">
-							<figure class="no-back-image">
-								<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
-							</figure>			
-						</a>
-				<div class="product-group-button">
-
-	</div>		
-</div>
-					<div class="meta-wrapper">
-						<h3 class="heading-title product-name">
-							<a href="https://demo.theme-sky.com/ecomall/shop/apple-iphone-11-pro-max-triple-camera/">Niszczarka HP OneShred 12CC</a>
-						</h3>
-
-						<span class="price"><span class="woocommerce-Price-amount amount">
-							<bdi>
-
-							</span>736,01 zł</bdi>
-						</span> 
-						
-			<div class="product-group-button-meta">
-
-				</div>		</div>
-				</div>
-			</section>
+	<div class="heading-products-kb">
+		<h2>Produkty powiązane</h2>
+		<h6>
+			<a href="">
+				Zobacz Wszystkie 
+				<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="32"
+				height="32"
+				viewBox="0 0 24 24"
+				class="color-black"
+				>
+				<path fill="none" d="M0 0h24v24H0V0z" />
+				<path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+				</svg>
+			</a>
+		</h6>
+	</div>
+	<div class="products-kb">
+		<div class="product-kb">
+			<i class='far fa-heart favorite-heart' style='font-size:20px'></i>
+			<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
+			<h3 class="product-name">
+				<a href="">Niszczarka HP OneShred 12CC</a>
+			</h3>
+			<span class="product-price-kb">736,01 zł</span>
+			<span class="old-price-line-trought-kb">736,01 zł<span>
 		</div>
-</section>
+		<div class="product-kb">
+			<i class='far fa-heart favorite-heart' style='font-size:20px'></i>
+			<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
+			<h3 class="product-name">
+				<a href="">Niszczarka HP OneShred 12CC</a>
+			</h3>
+			<span class="product-price-kb">736,01 zł</span>
+			<span class="old-price-line-trought-kb">736,01 zł<span>
+		</div>
+		<div class="product-kb">
+			<i class='far fa-heart favorite-heart' style='font-size:20px'></i>
+			<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
+			<h3 class="product-name">
+				<a href="">Niszczarka HP OneShred 12CC</a>
+			</h3>
+			<span class="product-price-kb">736,01 zł</span>
+			<span class="old-price-line-trought-kb">736,01 zł<span>
+		</div>
+		<div class="product-kb">
+			<i class='far fa-heart favorite-heart' style='font-size:20px'></i>
+			<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
+			<h3 class="product-name">
+				<a href="">Niszczarka HP OneShred 12CC</a>
+			</h3>
+			<span class="product-price-kb">736,01 zł</span>
+			<span class="old-price-line-trought-kb">736,01 zł<span>
+		</div>
+		<div class="product-kb">
+			<i class='far fa-heart favorite-heart' style='font-size:20px'></i>
+			<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
+			<h3 class="product-name">
+				<a href="">Niszczarka HP OneShred 12CC</a>
+			</h3>
+			<span class="product-price-kb">736,01 zł</span>
+			<span class="old-price-line-trought-kb">736,01 zł<span>
+		</div>
+		<div class="product-kb">
+			<i class='far fa-heart favorite-heart' style='font-size:20px'></i>
+			<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
+			<h3 class="product-name">
+				<a href="">Niszczarka HP OneShred 12CC</a>
+			</h3>
+			<span class="product-price-kb">736,01 zł</span>
+			<span class="old-price-line-trought-kb">736,01 zł<span>
+		</div>
+	</div>
+	</section>
+<section class="related products">
+	<div class="heading-products-kb padding-rest">
+		<h2>Produkty powiązane</h2>
+		<h6>
+			<a href="">
+				Zobacz Wszystkie 
+				<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="32"
+				height="32"
+				viewBox="0 0 24 24"
+				class="color-black"
+				>
+				<path fill="none" d="M0 0h24v24H0V0z" />
+				<path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+				</svg>
+			</a>
+		</h6>
+	</div>
+	<div class="products-kb">
+		<div class="product-kb">
+			<i class='far fa-heart favorite-heart' style='font-size:20px'></i>
+			<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
+			<h3 class="product-name">
+				<a href="">Niszczarka HP OneShred 12CC</a>
+			</h3>
+			<span class="product-price-kb">736,01 zł</span>
+			<span class="old-price-line-trought-kb">736,01 zł<span>
+		</div>
+		<div class="product-kb">
+			<i class='far fa-heart favorite-heart' style='font-size:20px'></i>
+			<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
+			<h3 class="product-name">
+				<a href="">Niszczarka HP OneShred 12CC</a>
+			</h3>
+			<span class="product-price-kb">736,01 zł</span>
+			<span class="old-price-line-trought-kb">736,01 zł<span>
+		</div>
+		<div class="product-kb">
+			<i class='far fa-heart favorite-heart' style='font-size:20px'></i>
+			<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
+			<h3 class="product-name">
+				<a href="">Niszczarka HP OneShred 12CC</a>
+			</h3>
+			<span class="product-price-kb">736,01 zł</span>
+			<span class="old-price-line-trought-kb">736,01 zł<span>
+		</div>
+		<div class="product-kb">
+			<i class='far fa-heart favorite-heart' style='font-size:20px'></i>
+			<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
+			<h3 class="product-name">
+				<a href="">Niszczarka HP OneShred 12CC</a>
+			</h3>
+			<span class="product-price-kb">736,01 zł</span>
+			<span class="old-price-line-trought-kb">736,01 zł<span>
+		</div>
+		<div class="product-kb">
+			<i class='far fa-heart favorite-heart' style='font-size:20px'></i>
+			<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
+			<h3 class="product-name">
+				<a href="">Niszczarka HP OneShred 12CC</a>
+			</h3>
+			<span class="product-price-kb">736,01 zł</span>
+			<span class="old-price-line-trought-kb">736,01 zł<span>
+		</div>
+		<div class="product-kb">
+			<i class='far fa-heart favorite-heart' style='font-size:20px'></i>
+			<img src="images/prod_loading.gif" data-src="images/product.png" class="attachment-shop_catalog wp-post-image ts-lazy-load" alt="phone" width="400" height="400">
+			<h3 class="product-name">
+				<a href="">Niszczarka HP OneShred 12CC</a>
+			</h3>
+			<span class="product-price-kb">736,01 zł</span>
+			<span class="old-price-line-trought-kb">736,01 zł<span>
+		</div>
+	</div>
+	</section>
 
 
 </div>
@@ -1102,7 +1050,24 @@ var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/ecomall\/?wc-ajax=%%endp
 </div><!-- #main .wrapper -->
 
 
+<!-- SECTION 5 / LOGO SLIDER -->
 
+<div class="logos-bar">
+	<div class="marquee">
+		<ul class="marquee-content">
+		  <li><img src="images//logo/1.png" alt=""></li>
+		  <li><img src="images//logo/2.png" alt=""></li>
+		  <li><img src="images//logo/3.png" alt=""></li>
+		  <li><img src="images//logo/4.png" alt=""></li>
+		  <li><img src="images//logo/5.png" alt=""></li>
+		  <li><img src="images//logo/6.png" alt=""></li>
+		  <li><img src="images//logo/7.png" alt=""></li>
+		</ul>
+	  </div>
+</div>
+
+
+<!-- END OF SECTION 5 / LOGO SLIDER -->
 
 
 
@@ -2579,6 +2544,9 @@ var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/ecomall\/?wc-ajax=%%endp
 		</div>
 	</div>
 </div>
+
+
+
 	<script type="text/javascript">
 		(function () {
 			var c = document.body.className;
@@ -2646,6 +2614,9 @@ var ecomall_params = {"ajax_url":"\/ecomall\/wp-admin\/admin-ajax.php","sticky_h
 var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":993,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":767,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":992,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":true},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.20.1","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"block_editor_assets_optimize":true,"ai-layout":true,"landing-pages":true,"e_lazyload":true,"e_image_loading_optimization":true},"urls":{"assets":"https:\/\/demo.theme-sky.com\/ecomall\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"viewport_tablet":992,"active_breakpoints":["viewport_mobile","viewport_tablet","viewport_tablet_extra","viewport_laptop"],"viewport_laptop":1366,"stretched_section_container":"#main","viewport_mobile":767,"viewport_tablet_extra":1200,"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":6972,"title":"Apple%20iPhone%2011%20Pro%20Max%2C%20256GB%2C%20Black%20%E2%80%93%20Unlocked%20%E2%80%93%20Ecomall","excerpt":"<ul>\r\n \t<li>RAM: 16GB<\/li>\r\n \t<li>Hard Drive: 256GB SSD<\/li>\r\n \t<li>Screen Size: 13.3 inches<\/li>\r\n<\/ul>","featuredImage":"https:\/\/demo.theme-sky.com\/ecomall\/wp-content\/uploads\/2023\/03\/16.jpg"}};
 /* ]]> */
 </script>
+
+
+
 <script type="text/javascript" src="js/frontend.min.js" id="elementor-frontend-js"></script>
 		<div id="ts-quickshop-modal" class="ts-popup-modal">
 			<div class="overlay"></div>
@@ -2654,7 +2625,9 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 				<div class="quickshop-content"></div>
 			</div>
 		</div>
+
 		
+		<script src="js/icon-slider.js"></script>
 
 </body></html><!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
